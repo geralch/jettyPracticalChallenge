@@ -8,6 +8,7 @@ import { HomeComponent } from './home/home.component';
 import { TripsComponent } from './trips/trips.component';
 import { FormsModule } from '@angular/forms';
 import { HttpModule } from '../../node_modules/@angular/http';
+import { ErrorsComponent } from './errors/errors.component';
 const appRoutes: Routes = [
   {path: '', component: LoginComponent},
   {path: 'home', component: HomeComponent},
@@ -18,7 +19,8 @@ const appRoutes: Routes = [
     AppComponent,
     LoginComponent,
     HomeComponent,
-    TripsComponent
+    TripsComponent,
+    ErrorsComponent
   ],
   imports: [
     BrowserModule, 

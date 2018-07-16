@@ -16,6 +16,8 @@ export class AppComponent {
     let autorization = localStorage.getItem('Authorization');
     if (autorization != null) {
       this.router.navigate(['/home'])
+    }else{
+      this.router.navigate(['/'])
     }
   }
 

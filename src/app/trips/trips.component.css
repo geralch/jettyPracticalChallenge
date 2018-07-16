@@ -1,0 +1,46 @@
+.trips{
+    margin-top: 50px;
+}
+
+.day-card{
+    border: none;
+}
+
+.day-header{
+    background-color: #f4f4f4;
+    color: #4abea7;
+    font-weight: bold;
+}
+
+.day-header p{
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+.day-card .card{
+    margin-top: 10px;
+}
+
+.card-body{
+    padding: 10px;
+}
+
+.trip-text-bold{
+    color: #4abea7;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.trip-text-simple{
+    font-size: 14px;
+    margin-bottom: 1px;
+    color: #383d41;
+}
+
+.stops-button button{
+    border-color: #4abea7;
+    background-color: #4abea7;
+    border-radius: 0px;
+    margin-top: 10px;
+    font-size: 14px;
+}
