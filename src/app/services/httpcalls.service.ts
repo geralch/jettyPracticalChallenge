@@ -52,6 +52,7 @@ export class HTTPCallsService {
     localStorage.removeItem('auth_token');
     localStorage.removeItem('email');
     localStorage.removeItem('Authorization');
+    localStorage.removeItem('user');
   }
 
   setHeaders(){
@@ -83,6 +84,7 @@ export class HTTPCallsService {
     localStorage.removeItem('auth_token');
     localStorage.removeItem('email');
     localStorage.removeItem('Authorization');
+    localStorage.removeItem('user');
 
     localStorage.setItem('ErrorCode', error.status);
     localStorage.setItem('ErrorText', JSON.parse(error['_body'])['message']);
