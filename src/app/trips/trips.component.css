@@ -1,0 +1,82 @@
+.container{
+    padding: 0px;
+}
+
+.trips{
+    margin-top: 20px;
+}
+
+.day-card{
+    border: 1px solid #4abea7;
+}
+
+.day-header{
+    background-color: #f4f4f4;
+    color: #4abea7;
+    font-weight: bold;
+    border-bottom: 1px solid #4abea7;
+    margin: 1px;
+}
+
+.day-header p{
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+.day-card .card{
+    margin-top: 10px;
+}
+
+.row{
+    margin: 5px;
+}
+
+.card-body{
+    padding: 10px;
+}
+
+.trip-text-bold{
+    color: #4abea7;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.trip-text-simple{
+    font-size: 14px;
+    margin-bottom: 1px;
+    color: #383d41;
+}
+
+.stops-button button{
+    border-color: #4abea7;
+    background-color: #4abea7;
+    border-radius: 0px;
+    margin-top: 10px;
+    font-size: 14px;
+}
+
+.stops-dialog .stops-header{
+    color: #4abea7;
+    font-size: 15px;
+    font-weight : bold;
+    font-family: 'Nunito Sans', sans-serif !important;
+}
+
+.stops-dialog .stops-dialog-date{
+    font-size: 14px;
+    color: #4abea7;
+    font-family: 'Nunito Sans', sans-serif !important;
+}
+
+.stops-dialog .stops-dialog-stop{
+    font-size: 12px;
+    font-family: 'Nunito Sans', sans-serif !important;
+}
+
+.stops-dialog .stops-dialog-hour{
+    padding-right: 5px;
+    border-right: 1px solid #4abea7;
+    margin-right: 5px;
+    color: #4abea7;
+    font-size: 13px;
+}

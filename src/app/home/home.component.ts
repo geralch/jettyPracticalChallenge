@@ -7,9 +7,13 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HomeComponent implements OnInit {
 
+  public userFullName : string = ''
+
   constructor() { }
 
   ngOnInit() {
+    let userData = JSON.parse(localStorage.getItem('user'))
+    this.userFullName = userData['name'] + ' ' + userData['lastname']
   }
 
 }

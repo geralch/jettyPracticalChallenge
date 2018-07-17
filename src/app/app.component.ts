@@ -14,8 +14,14 @@ export class AppComponent {
   constructor(private service: HTTPCallsService,
     private router: Router) {
     let autorization = localStorage.getItem('Authorization');
+    let errorCode = localStorage.getItem('ErrorCode');
     if (autorization != null) {
       this.router.navigate(['/home'])
+    } else {
+      this.router.navigate(['/'])
+    }
+    if (errorCode != null) {
+      this.router.navigate(['/'])
     }
   }
 

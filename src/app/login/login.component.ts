@@ -35,6 +35,7 @@ export class LoginComponent implements OnInit {
           if(response.hasOwnProperty('id')){
             this.router.navigate(['/home'])
             this.showError = false
+            localStorage.setItem('user',JSON.stringify(response))
           }
         }else{
           this.showError = true
