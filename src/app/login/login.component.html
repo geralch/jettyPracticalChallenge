@@ -1,0 +1,26 @@
+<div class="container">
+  <div class="row">
+    <div class="col-6 offset-3">
+      <div class="card login-card">
+        <div class="text-center login-icon">
+          <img src="../assets/images/logo-jetty.png" width="150" height="75" class="d-inline-block align-top" alt="">
+          <p class="text-center">Buen Viaje. Siempre.</p>
+        </div>
+        <div class="card-body">
+          <div class="login-input text-center">
+            <input id="email" type="text" [(ngModel)]="userEmail" pInputText placeholder="Correo Electrónico">
+          </div>
+          <div class="login-input text-center">
+            <input id="password" type="password" [(ngModel)]="userPassword" pInputText placeholder="Contraseña">
+          </div>
+          <div class="login-buton">
+              <button type="button" class="btn btn-primary btn-lg btn-block" (click)="loginIn()">Iniciar sesión</button>
+          </div>
+          <div *ngIf="showError" class="alert alert-danger" role="alert">
+            {{errorText}}
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

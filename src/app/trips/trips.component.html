@@ -1,0 +1,37 @@
+<p-dialog class="stops-dialog"  [(visible)]="stopsModalShow" [modal]="true" [responsive]="true" [width]="500" >
+<!--  [minWidth]="200" [minY]="70" [maximizable]="true" [baseZIndex]="10000" 
+[style]="{'border': '1px solid #4abea7'}"-->
+  <p-header class="stops-header">
+    Paradas de {{trip.name}}
+  </p-header>
+  <p class="stops-dialog-date">{{trip.dateText}} a las {{trip.time}}</p> 
+  <div *ngFor="let stop of trip.trip_stops">
+    <p class="stops-dialog-stop" ><span class="stops-dialog-hour">{{stop.departure_time}}</span>{{stop.address}}</p>
+  </div>
+</p-dialog>
+
+<div class="container">
+  <div class="trips" *ngFor="let day of trips">
+    <div class="card day-card">
+      <div class="text-center day-header">
+        <p class="text-center"> {{day.dateText}} </p>
+      </div>
+      <div class="row">
+        <div class="col-4" *ngFor="let trip of day.trips">
+          <div class="card">
+            <div class="card-body">
+              <p class="trip-text-bold">{{trip.name}}</p>
+              <p class="trip-text-simple">Horario de Salida</p>
+              <p class="trip-text-bold">{{trip.time}}</p>
+              <p class="trip-text-simple">{{trip.firtsStop}} </p>
+              <p class="trip-text-simple">{{trip.lastStop}}</p>
+              <div class="stops-button">
+                <button type="button" class="btn btn-primary btn-lg btn-block" (click)="showStops(trip)">Ver paradas</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
